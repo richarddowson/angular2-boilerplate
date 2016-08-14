@@ -30,12 +30,12 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        include: helpers.root('src', 'app', 'assets'),
+        include: helpers.root('src', 'app', 'styles'),
         loader: ExtractTextPlugin.extract('style', 'css?sourceMap!less')
       },
       {
         test: /\.less$/,
-        exclude: helpers.root('src', 'app', 'assets'),
+        exclude: helpers.root('src', 'app', 'styles'),
         loader: 'raw!less'
       }
     ]
