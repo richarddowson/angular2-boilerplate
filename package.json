@@ -5,8 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
     "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "postinstall": "typings install"
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
   "license": "MIT",
   "dependencies": {
@@ -24,6 +23,9 @@
     "zone.js": "0.6.12"
   },
   "devDependencies": {
+    "@types/core-js": "^0.9.31",
+    "@types/jasmine": "^2.2.32",
+    "@types/node": "^6.0.36",
     "angular2-template-loader": "^0.4.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
@@ -45,7 +47,6 @@
     "style-loader": "^0.13.1",
     "ts-loader": "^0.8.1",
     "typescript": "^2.0.0",
-    "typings": "^1.0.4",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.14.0"
