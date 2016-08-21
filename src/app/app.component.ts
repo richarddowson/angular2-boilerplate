@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-require('app/styles/global.less');
+require('styles/global.less');
 
 @Component({
   selector: 'my-app',
